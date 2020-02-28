@@ -20,8 +20,12 @@ import csv
 
 # In[3]:
 
-def get_data_axuv_82(x):
-    filename='./axuv_data/AXUV_'+str(x)+'.csv'
+def get_data_axuv_82(shotnumber,**kws):
+    #filename='./axuv_data/AXUV_'+str(x)+'.csv'
+    basedir = kws.get('basedir','../data')
+    # TODO: add function to scan datafolder (copy from my SIF reader)
+    filename = f'{basedir}/AXUV_{shotnumber}.csv'
+
     csvfile=open(filename,'r',encoding='cp932')
     reader=csv.reader(csvfile,delimiter=',',quotechar='"')
     datalist=[]
