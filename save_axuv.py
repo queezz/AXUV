@@ -65,7 +65,7 @@ def get_data_brightness(x):
                          'nan3','nan4','nan5','nan6','nan7','nan8','nan9','nan10','nan11','nan12']
     axuvsetting=axuvsetting.reset_index()
     
-    #Solve sachireshon
+    #Solve saturation
     for i in range(0,len(axuvdata.iloc[0,:])-1):
         #axuv_down_limit=axuvdata.iloc[:,i][axuvdata.iloc[:,i]==str('-------')]
         #axuv_up_limit=axuvdata.iloc[:,i][axuvdata.iloc[:,i]==str('+++++++')]
