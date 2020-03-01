@@ -2,7 +2,7 @@
 # coding: utf-8
 
 # In[1]:
-get_ipython().run_line_magic('reset', '-f')
+#get_ipython().run_line_magic('reset', '-f')
 # In[2]:
 import pandas as pd
 import urllib.request
