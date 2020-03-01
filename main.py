@@ -33,6 +33,15 @@ class MainWidget(QtCore.QObject, UIWindow):
         z = data.iloc[:,1:].values.T
         self.contour.image.setImage(z)
         self.contour.image.scale(1/50000,1)
+        self.controlDock.tminSb.valueChanged.connect(self.rescale)
+        self.controlDock.tmaxSb.valueChanged.connect(self.rescale)
+
+    def rescale(self):
+        """ Rescale 1D plots """
+        tmin = self.controlDock.tminSb.value()
+        tmax = self.controlDock.tmaxSb.value()
+        [p.setXRange(tmin,tmax,0) for p in self.graph.plots]
+        self.contour.plot.setXRange(tmin,tmax,0)
         
     def __quit(self):
         """ terminate app """
