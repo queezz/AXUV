@@ -1,4 +1,4 @@
-![Python package](https://github.com/queezz/AXUV/workflows/Python%20package/badge.svg)
+![Python application](https://github.com/queezz/AXUV/workflows/Python%20application/badge.svg)
 
 # AXUV analysis tool.
 
