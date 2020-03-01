@@ -14,7 +14,7 @@ class ControlDock(Dock):
         
         self.valueBw = QtGui.QTextBrowser()
         self.valueBw.setMaximumHeight(90)
-        self.valueBw.setMinimumWidth(300)
+        self.valueBw.setMinimumWidth(100)
         self.valueBw.setCurrentFont(QtGui.QFont("Courier New"))
         self.__setLayout()
 
